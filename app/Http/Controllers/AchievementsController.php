@@ -107,6 +107,7 @@ class AchievementsController extends Controller
 
 
         return response()->json([
+            'main'=>true,
             'unlocked_achievements' => $unlockedAchievements,
             'next_available_achievements' => $nextAvailableAchievements,
             'current_badge' => $currentBadge,
