@@ -107,6 +107,8 @@ class AchievementsController extends Controller
 
 
         return response()->json([
+            "another_pull_req"=>'another_pull_req',
+            'foryolo'=>'yolo badger',
             'test'=>'master pull req',
             'unlocked_achievements' => $unlockedAchievements,
             'next_available_achievements' => $nextAvailableAchievements,
